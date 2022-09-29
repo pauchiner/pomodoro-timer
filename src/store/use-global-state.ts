@@ -14,9 +14,9 @@ export const useGlobalState = () => {
   const [type, setType] = useState("work");
 
   const resetTimer = () => {
-    setTimeLeft(pomodoroTime)
     setState("idle")
     setType("work")
+    setTimeLeft(pomodoroTime)
     setLapse(1)
   }
 
