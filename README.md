@@ -14,7 +14,7 @@ A open source pomodoro timer app built with electron and react.
 
 > ### ❗️ Contributors needed ❗️
 
-- [ ] Auto resizable text
+- [ ] A good responsive desing
 - [ ] Push notifications
 - [ ] Color themes
 
