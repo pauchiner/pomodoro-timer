@@ -14,9 +14,11 @@ A open source pomodoro timer app built with electron and react.
 
 > ### ❗️ Contributors needed ❗️
 
-- [ ] A good responsive desing
+- [ ] A good responsive design
 - [ ] Push notifications
-- [ ] Color themes
+- [ ] Add tests
+- [ ] A json file for the settings
+- [ ] Color themes and cool customizations
 
 if you think any functionality is missing, do not hesitate to add it to [issues](https://github.com/pauchiner/pomodoro-timer/issues)
 
