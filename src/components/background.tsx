@@ -7,7 +7,11 @@ const Background = ({ children }: any) => {
       as={motion.div}
       alignItems="center"
       initial={{ opacity: 0, marginTop: 10 }}
-      animate={{ background: useColorModeValue("#f9f9f9", "#222"), opacity: 1, marginTop: 0 }}
+      animate={{
+        background: useColorModeValue("#f9f9f9", "#222"),
+        opacity: 1,
+        marginTop: 0,
+      }}
       display="flex"
       justifyContent="center"
       position="fixed"

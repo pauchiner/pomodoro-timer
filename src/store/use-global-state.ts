@@ -14,11 +14,11 @@ export const useGlobalState = () => {
   const [type, setType] = useState("work");
 
   const resetTimer = () => {
-    setState("idle")
-    setType("work")
-    setTimeLeft(pomodoroTime)
-    setLapse(1)
-  }
+    setState("idle");
+    setType("work");
+    setTimeLeft(pomodoroTime);
+    setLapse(1);
+  };
 
   //Timer States and logic
   useEffect(() => {
@@ -48,11 +48,11 @@ export const useGlobalState = () => {
           break;
         }
         if (lapse === lapsesToLongBreak && type === "work") {
-          setType("longBreak")
+          setType("longBreak");
           break;
         }
         if (type === "break" && timeLeft <= 0) {
-          setType("work")
+          setType("work");
           break;
         }
         if (type === "work" && timeLeft <= 0) {
@@ -61,7 +61,19 @@ export const useGlobalState = () => {
           break;
         }
     }
-  }, [timeLeft, state, lapse, setState, setLapse, setTimeLeft, type, lapsesToLongBreak, pomodoroTime, breakTime, longBreakTime]);
+  }, [
+    timeLeft,
+    state,
+    lapse,
+    setState,
+    setLapse,
+    setTimeLeft,
+    type,
+    lapsesToLongBreak,
+    pomodoroTime,
+    breakTime,
+    longBreakTime,
+  ]);
 
   return {
     resetTimer,

@@ -9,7 +9,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a
    build.
-2. Verify the code formatter to use prettier with the default configuration, you can format the whole source code automaticaly running 
+2. Verify the code formatter to use prettier with the default configuration, you can format the whole source code automaticaly running
    `npm run prettier`
 3. Update the README.md with details of changes to the interface, this includes new environment
    variables, new packages, useful file locations and container parameters.

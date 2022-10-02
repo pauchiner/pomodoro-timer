@@ -6,7 +6,7 @@ import {
   NumberInputStepper,
   NumberIncrementStepper,
   NumberDecrementStepper,
-} from '@chakra-ui/react'
+} from "@chakra-ui/react";
 
 interface Props {
   text: string;
@@ -18,7 +18,14 @@ const SettingsNumberInput = (props: Props) => {
   return (
     <Box display="flex" marginTop={3} marginBottom={3}>
       <Text flex={2}>{props.text}</Text>
-      <NumberInput flex={1} size="sm" defaultValue={props.defaultValue} onChange={props.onChange} min={1} max={99}>
+      <NumberInput
+        flex={1}
+        size="sm"
+        defaultValue={props.defaultValue}
+        onChange={props.onChange}
+        min={1}
+        max={99}
+      >
         <NumberInputField />
         <NumberInputStepper>
           <NumberIncrementStepper />
@@ -26,7 +33,7 @@ const SettingsNumberInput = (props: Props) => {
         </NumberInputStepper>
       </NumberInput>
     </Box>
-  )
-}
+  );
+};
 
 export default SettingsNumberInput;
