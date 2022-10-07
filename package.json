@@ -5,7 +5,49 @@
   "description": "A pomodoro timer built with electron and react",
   "author": "Pau García Chiner",
   "build": {
-    "appId": "com.pomodoro-timer"
+    "appId": "com.pomodoro-timer",
+    "directories": {
+      "buildResources": "build"
+    },
+    "files": [
+      "build/**/*"
+    ],
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "mac": {
+      "icon": "build/favicon.png"
+    },
+    "win": {
+      "asar": false,
+      "target": "nsis",
+      "icon": "build/favicon.ico"
+    },
+    "nsis": {
+      "installerIcon": "build/favicon.ico",
+      "installerHeaderIcon": "build/favicon.ico",
+      "deleteAppDataOnUninstall": true
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "rpm",
+        "snap",
+        "AppImage"
+      ],
+      "category": "Development"
+    }
   },
   "main": "public/electron.js",
   "homepage": "./",
