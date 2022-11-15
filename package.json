@@ -109,7 +109,7 @@
   },
   "devDependencies": {
     "electron": "20.0.2",
-    "electron-builder": "23.3.3",
+    "electron-builder": "^22.10.3",
     "prettier": "2.7.1"
   }
 }
