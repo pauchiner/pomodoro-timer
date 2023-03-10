@@ -2,7 +2,7 @@
 
 A open source pomodoro timer app built with electron and react.
 
-<img style="justify-content='center'; display='block'" height="320px" src="./public/github-demo.gif"></img>
+<img style="justify-content='center'; display='block'" height="320px" src="https://github.com/pauchiner/pomodoro-timer/blob/main/.github/images/preview.gif"></img>
 
 # Features
 
@@ -24,4 +24,4 @@ if you think any functionality is missing, do not hesitate to add it to [issues]
 
 # Contributing
 
-See [contributing](https://github.com/pauchiner/pomodoro-timer/blob/main/CONTRIBUTING.md) for more information.
+See [contributing](https://github.com/pauchiner/pomodoro-timer/blob/main/.github/CONTRIBUTING.md) for more information.
