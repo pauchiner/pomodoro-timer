@@ -1,0 +1,18 @@
+{
+  "name": "pomodoro-timer",
+  "version": "2.0.0",
+  "description": "A pomodoro timer built with react and electron",
+  "license": "MIT",
+  "author": {
+    "name": "Pau García Chiner",
+    "email": "pauchiner@icloud.com",
+    "url": "https://github.com/pauchiner"
+  },
+  "main": "./dist/main/main.js",
+  "scripts": {
+    "rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
+    "postinstall": "npm run rebuild && npm run link-modules",
+    "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts"
+  },
+  "dependencies": {}
+}
