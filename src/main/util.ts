@@ -1,9 +1,10 @@
 /* eslint import/prefer-default-export: off */
 import { URL } from 'url';
 import path from 'path';
+import { isDebug } from './enviroments';
 
 export function resolveHtmlPath(htmlFileName: string) {
-  if (process.env.NODE_ENV === 'development') {
+  if (isDebug) {
     const port = process.env.PORT || 1212;
     const url = new URL(`http://localhost:${port}`);
     url.pathname = htmlFileName;
