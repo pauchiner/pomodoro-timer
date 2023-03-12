@@ -8,6 +8,7 @@ import {
 
 //Routes
 import TimerRoute from '../routes/timer';
+import SettingsRoute from '../routes/settings';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="main" element={<TimerRoute />} />
+          <Route path="settings" element={<SettingsRoute />} />
           <Route index element={<Navigate to="main" />} />
         </Routes>
       </Router>
