@@ -1,14 +1,17 @@
-import { Box, Text, Image } from '@chakra-ui/react';
-import appIcon from '../../assets/icon.svg';
+import RouteLayout from '../components/layouts/route';
+import Timer from 'components/timer';
+import LapseCounter from 'components/lapse-counter';
+import CornerButton from 'components/corner-button';
+import ControlButtons from 'components/control-buttons';
 
 const Route = () => {
   return (
-    <Box>
-      <Image src={appIcon} width={32} height={32} />
-      <Text fontWeight="medium" textAlign="center" fontSize="lg">
-        Pomodoro Timer
-      </Text>
-    </Box>
+    <RouteLayout>
+      <CornerButton />
+      <LapseCounter />
+      <Timer />
+      <ControlButtons />
+    </RouteLayout>
   );
 };
 
