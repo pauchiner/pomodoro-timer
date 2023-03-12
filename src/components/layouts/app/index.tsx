@@ -1,9 +1,11 @@
 import { Box } from '@chakra-ui/react';
+import useTimerState from 'components/timer-manager/hooks/useTimerState';
 import { motion } from 'framer-motion';
 import useColors from './hooks/useColors';
 
 const AppLayout = (props: { children: any }) => {
   const { backgroundColor } = useColors();
+  useTimerState();
 
   return (
     <Box
