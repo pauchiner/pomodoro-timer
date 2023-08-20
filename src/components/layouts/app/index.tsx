@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import useColors from './hooks/useColors';
 
 const AppLayout = (props: { children: any }) => {
-  const { backgroundColor } = useColors();
+  const backgroundColor = useColors();
   useTimerState();
 
   return (
