@@ -11,7 +11,7 @@ const LapseCounter = () => {
     <Box alignItems="center" textAlign="center" justifyContent="center">
       <Text
         as={motion.h2}
-        animate={{ zoom: lapseCounterSize }}
+        animate={{ zoom: lapseCounterSize, transition: { duration: 0 } }}
         fontWeight="medium"
         fontSize="1.2em"
       >
