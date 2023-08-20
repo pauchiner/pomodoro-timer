@@ -22,9 +22,12 @@ const createMainWindow = async () => {
   };
 
   mainWindow = new BrowserWindow({
+    titleBarStyle: 'hidden',
     show: false,
     width: 460,
+    minWidth: 360,
     height: 380,
+    minHeight: 310,
     icon: getAssetPath('icon.png'),
     webPreferences: {
       preload: app.isPackaged

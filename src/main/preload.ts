@@ -4,8 +4,9 @@ import { contextBridge, ipcRenderer } from 'electron';
 
 const electronHandler = {
   ipcRenderer: {
-    onMenuSettings: (callback: any) =>
-      ipcRenderer.on('menu-settings', callback),
+    onMenuSettings: (callback: any) => {
+      ipcRenderer.on('menu-settings', callback);
+    },
   },
 };
 

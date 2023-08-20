@@ -1,0 +1,9 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  background: transparent;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #606060;
+  border-radius: 13px;
+}
