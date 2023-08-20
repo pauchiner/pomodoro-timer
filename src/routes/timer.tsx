@@ -4,7 +4,7 @@ import LapseCounter from 'components/lapse-counter';
 import CornerButton from 'components/corner-button';
 import ControlButtons from 'components/control-buttons';
 
-const Route = () => {
+const TimerRoute = () => {
   return (
     <RouteLayout>
       <CornerButton />
@@ -15,4 +15,4 @@ const Route = () => {
   );
 };
 
-export default Route;
+export default TimerRoute;
