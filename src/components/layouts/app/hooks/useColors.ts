@@ -8,7 +8,7 @@ const useColors = () => {
 
   const backgroundColor = useColorModeValue(backgroundLight, backgroundDark);
 
-  return { backgroundColor };
+  return backgroundColor;
 };
 
 export default useColors;
