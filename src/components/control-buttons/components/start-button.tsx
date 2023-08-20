@@ -6,7 +6,7 @@ import { useAppDispatch } from 'store/hooks';
 import useStyle from '../hooks/useStyle';
 
 const StartButton = () => {
-  const { colorLight, colorDark, size } = useStyle();
+  const { colorLight, colorDark } = useStyle();
   const dispatch = useAppDispatch();
 
   return (
@@ -16,7 +16,6 @@ const StartButton = () => {
         color: '#00000000',
       }}
       animate={{
-        zoom: size,
         color: useColorModeValue(colorLight, colorDark),
         right: 0,
         width: 80,
