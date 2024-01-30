@@ -1,11 +1,18 @@
-import {MemoryRouter as Router, Routes, Route} from 'react-router-dom';
-import './App.css';
+import {
+  MemoryRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom';
+import {Main, Settings} from './routes';
 
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<h1>Hello</h1>} />
+        <Route index element={<Navigate to="/main" replace />} />
+        <Route path="/main" element={<Main />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </Router>
   );
