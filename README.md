@@ -2,7 +2,7 @@
 
 A open source pomodoro timer app built with electron and react.
 
-<img style="justify-content='center'; display='block'" height="320px" src="./public/github-demo.gif"></img>
+<img style="justify-content='center'; display='block'" height="320px" src="./assets/github-demo.gif"></img>
 
 # Features
 
