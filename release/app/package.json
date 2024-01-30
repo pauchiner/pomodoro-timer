@@ -1,6 +1,6 @@
 {
   "name": "PomodoroTimer",
-  "version": "2.0.0",
+  "version": "1.1.0",
   "description": "A pomodoro timer built with react and electron",
   "license": "MIT",
   "author": "Pau García Chiner",
