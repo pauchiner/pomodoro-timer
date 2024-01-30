@@ -61,8 +61,6 @@ export default class MenuBuilder {
           selector: 'orderFrontStandardAboutPanel:',
         },
         {type: 'separator'},
-        {label: 'Services', submenu: []},
-        {type: 'separator'},
         {
           label: 'Hide Pomodoro Timer',
           accelerator: 'Command+H',
@@ -139,23 +137,24 @@ export default class MenuBuilder {
       label: 'Help',
       submenu: [
         {
-          label: 'Github',
+          label: 'Github Repository',
           click() {
             shell.openExternal('https://github.com/pauchiner/pomodoro-timer');
           },
         },
         {
-          label: 'Author',
-          click() {
-            shell.openExternal('https://pauchiner.es');
-          },
-        },
-        {
-          label: 'Issues',
+          label: 'Search Issues',
           click() {
             shell.openExternal(
               'https://github.com/pauchiner/pomodoro-timer/issues',
             );
+          },
+        },
+        {type: 'separator'},
+        {
+          label: 'Author',
+          click() {
+            shell.openExternal('https://pauchiner.es');
           },
         },
       ],
@@ -230,23 +229,23 @@ export default class MenuBuilder {
         label: 'Help',
         submenu: [
           {
-            label: 'Github',
+            label: 'Github Repository',
             click() {
               shell.openExternal('https://github.com/pauchiner/pomodoro-timer');
+            },
+          },
+          {
+            label: 'Search Issues',
+            click() {
+              shell.openExternal(
+                'https://github.com/pauchiner/pomodoro-timer/issues',
+              );
             },
           },
           {
             label: 'Author',
             click() {
               shell.openExternal('https://pauchiner.es');
-            },
-          },
-          {
-            label: 'Issues',
-            click() {
-              shell.openExternal(
-                'https://github.com/pauchiner/pomodoro-timer/issues',
-              );
             },
           },
         ],
